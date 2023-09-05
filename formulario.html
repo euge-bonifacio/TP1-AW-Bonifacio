@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/formulario.css">
     <title>Formulario</title>
 </head>
 <body>
-    <h1>Formulario</h1>
+    <header>
+        <div class="img-conteiner">
+            <img src="Imagenes/LogoEnaSports.PNG" alt="LogoEnaSports">
+        </div>
+        <h1 class="centrar-titulo">Trabaja con nosotros</h1>
+    </header>
+    <main>
+        <h2 class="centrar-titulo">Completa los siguientes campos</h2>
+
+        <form action="http://127.0.0.1:5500/formulario.html" method="post">
+
+            <label for="nombre-registro">Nombre</label>
+            <input type="text" id="nombre-registro" name="nombre">
+
+            <label for="apellido-registro">Apellido</label>
+            <input type="text" id="apellido-registro" name="apellido">
+            <br/>
+            <label for="correo-registro">Correo Electrónico</label>
+            <input type="email" id="correo-registro" name="correoElectronico">
+            <br/>
+            <label for="telefono-registro">Número de teléfono</label>
+            <input type="text" id="telefono-registro" name="telefono">
+            <br/>
+            <label for="edad-registro">Edad</label>
+            <input type="number" id="edad-registro" name="edad">
+            <br/>
+            <label for="genero-registro">Género</label>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">masculino</label>
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="femenino">femenino</label>
+            <br/>
+            <label for="direccion-registro">Dirección</label>
+            <input type="text" id="direccion-registro" name="direccion">
+            <br/>
+            <label for="turno-registro">Jornada laboral</label>
+            <select name="turno" id="turno-registro">
+                <option value="mañana">Mañana</option>
+                <option value="tarde">Tarde</option>
+                <option value="jornada-completa">Jornada completa</option>
+            </select>
+            <br/>
+            <label for="cv-registro">Adjuntar CV</label>
+            <input type="file" id="cv-registro" name="cv">
+            <br/>
+            <label for="comentario-registro">Información complementaria</label>
+            <textarea id="comentario-registro" name="comentario" cols="30" rows="10">Escribe aquí</textarea>
+            <br/>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Restablecer">
+            <a href="Index.html">Volver</a>
+        </form>
+    </main>
+    <footer>    
+        <h4>Contacto</h4>
+        <a href="">Correo Electrónico</a>
+        <a href="">Teléfono</a>
+
+        <p>
+            © 2023 ENA Sport AR Todos los derechos reservados
+            Una marca de Empresa de Nutrición Argentina SA
+        </p>
+    </footer>
 </body>
 </html>
