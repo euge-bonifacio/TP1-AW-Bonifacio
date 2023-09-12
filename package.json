@@ -1,14 +1,22 @@
 {
   "name": "tp1-bonifacio",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "five-server"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "five-server": "^0.3.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/euge-bonifacio/TP1-AW-Bonifacio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/euge-bonifacio/TP1-AW-Bonifacio/issues"
+  },
+  "homepage": "https://github.com/euge-bonifacio/TP1-AW-Bonifacio#readme",
+  "description": ""
 }

@@ -9,58 +9,78 @@
 <body>
     <header>
         <div class="img-conteiner">
-            <img src="Imagenes/LogoEnaSports.PNG" alt="LogoEnaSports">
+            <a href="Index.html">
+                <img src="Imagenes/LogoEnaSports.PNG" alt="LogoEnaSports" id="logo">
+            </a>
         </div>
-        <h1 class="centrar-titulo">Trabaja con nosotros</h1>
+        <h1 id="titulo__principal">Trabaja con nosotros</h1>
     </header>
-    <main>
-        <h2 class="centrar-titulo">Completa los siguientes campos</h2>
+    <main class="formulario">
+        <h2 id="titulo__secundario">Completa los siguientes campos</h2>
 
         <form action="http://127.0.0.1:5500/formulario.html" method="post">
 
-            <label for="nombre-registro">Nombre</label>
-            <input type="text" id="nombre-registro" name="nombre">
-
-            <label for="apellido-registro">Apellido</label>
-            <input type="text" id="apellido-registro" name="apellido">
+            <div class="campos">
+                <label for="nombre-registro">Nombre y Apellido</label>
+                <input type="text" id="nombre-registro" name="nombreApellido" class="cajaTexto">
+            </div>
             <br/>
-            <label for="correo-registro">Correo Electrónico</label>
-            <input type="email" id="correo-registro" name="correoElectronico">
+            <div>
+                <label for="correo-registro">Correo Electrónico</label>
+                <input type="email" id="correo-registro" name="correoElectronico" class="cajaTexto">
+            </div>
             <br/>
-            <label for="telefono-registro">Número de teléfono</label>
-            <input type="text" id="telefono-registro" name="telefono">
+            <div>
+                <label for="telefono-registro">Número de teléfono</label>
+                <input type="text" id="telefono-registro" name="telefono" class="cajaTexto">
+            </div>
             <br/>
-            <label for="edad-registro">Edad</label>
-            <input type="number" id="edad-registro" name="edad">
+            <div>
+                <label for="edad-registro">Edad</label>
+                <input type="number" id="edad-registro" name="edad" class="cajaTexto">
+            </div>
             <br/>
-            <label for="genero-registro">Género</label>
-            <input type="radio" id="masculino" name="genero" value="masculino">
-            <label for="masculino">masculino</label>
-            <input type="radio" id="femenino" name="genero" value="femenino">
-            <label for="femenino">femenino</label>
+            <div>
+                <label for="genero-registro">Género</label>
+                <input type="radio" id="masculino" name="genero" value="masculino" class="boton__opcion">
+                <label for="masculino">masculino</label>
+                <input type="radio" id="femenino" name="genero" value="femenino" class="boton__opcion">
+                <label for="femenino">femenino</label>
+            </div>
             <br/>
-            <label for="direccion-registro">Dirección</label>
-            <input type="text" id="direccion-registro" name="direccion">
+            <div>
+                <label for="direccion-registro">Dirección</label>
+                <input type="text" id="direccion-registro" name="direccion" class="cajaTexto">
+            </div>
             <br/>
-            <label for="turno-registro">Jornada laboral</label>
-            <select name="turno" id="turno-registro">
-                <option value="mañana">Mañana</option>
-                <option value="tarde">Tarde</option>
-                <option value="jornada-completa">Jornada completa</option>
-            </select>
+            <div>
+                <label for="turno-registro">Jornada laboral</label>
+                <select name="turno" id="turno-registro" class="cajaTexto">
+                    <option value="mañana">Mañana</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="jornada-completa">Jornada completa</option>
+                </select>
+            </div>
             <br/>
-            <label for="cv-registro">Adjuntar CV</label>
-            <input type="file" id="cv-registro" name="cv">
+            <div>
+                <label for="cv-registro">Adjuntar CV</label>
+                <input type="file" id="cv-registro" name="cv" class="cajaTexto">
+            </div>
             <br/>
-            <label for="comentario-registro">Información complementaria</label>
-            <textarea id="comentario-registro" name="comentario" cols="30" rows="10">Escribe aquí</textarea>
+            <div>
+                <label for="comentario-registro">Información complementaria</label>
+                <br/>
+                <textarea id="comentario-registro" name="comentario" cols="30" rows="10" class="cajaTexto">Escribe aquí</textarea>
+            </div>
             <br/>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Restablecer">
-            <a href="Index.html">Volver</a>
+            <div class="botones">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Restablecer">
+                <a href="Index.html" id="boton__volver">Volver</a>
+            </div>
         </form>
     </main>
-    <footer>    
+    <footer class="footer">    
         <h4>Contacto</h4>
         <a href="">Correo Electrónico</a>
         <a href="">Teléfono</a>

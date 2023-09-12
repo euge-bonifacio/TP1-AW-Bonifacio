@@ -1,3 +1,4 @@
+/* HEADER */
 .img-conteiner{
     display: flex;
     justify-content: center;
@@ -5,16 +6,107 @@
     height: 20vh;
 }
 img{
-    width: 200px;
-    height: 100px;
+    height: 200px;
+    width: 250px;
 }
-.centrar-titulo{
+#titulo__principal{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 100%;
+    height: 50%;
+
+    font-family: sans-serif;
+    font-size: 35px;
+    background-color: #FAF0D7;
+
+    padding: 15px;
+
+
 }
-form{
+/* MAIN */
+#titulo__secundario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    width: 500px;
+    height: 150px;
+
+    font-family: sans-serif;
+    font-size: 30px;
+}
+div{
+    margin: 5px;
+}
+.formulario{
     text-align: center;
-    border: solid black 1px;
+    background-color: #FAFAFA;
+
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
+    padding: 15px;
+    border: solid #FFD95A 5px;
+    border-radius: 5px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.cajaTexto{
+    width: 300px;
+    height: 40px;
+    font-size: 25px;
+}
+input[type="submit"], input[type="reset"] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.boton__opcion{
+    transform: scale(1.5);
+}
+#boton__volver{
+    text-decoration: none;
+    background-color: #FAF0D7;
+    color: #BA704F;
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 5px;
+    padding: 15px;
+    border-radius: 5px;
+}
+/* FOOTER */
+.footer{
+    border: solid  5px #FFD95A;
+    border-radius: 5px;
+
+    background-color: #FAFAFA;
+    text-align: center;
+    font-family: sans-serif;
 }
